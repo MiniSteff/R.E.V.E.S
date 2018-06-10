@@ -1,0 +1,504 @@
+<div class="information">
+    <img src="https://raw.githubusercontent.com/MiniSteff/R.E.V.E.S/master/reves_logo600.jpg" />
+    <input type="text" name="attr_character_name" placeholder="Nom de votre personnage"></input>
+    <input type="text" name="attr_roleJoueur" placeholder="............................"></input>
+</div>
+
+
+<div class="sheet-personnage">
+    <p class="sheet-titre">▬ Personnage</p>
+    
+    <div class="sheet-personnage2">
+        
+        <p class="sheet-titre2">Caractéristiques</p>
+        <ul>
+            <li class="sheet-etoileCarac">
+                <input type="text" name="attr_nomCarac1" placeholder=".........." value="Force"></input>
+                <input type="number" name="attr_bonusCarac1" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac1" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac1" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac1" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac1" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac1" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac1">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac1}}} {{valeurCarac=[[@{etoileCarac1}]]}} {{valeurCarac2=@{etoileCarac1}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac2" placeholder=".........." value="Résistance"></input>
+                <input type="number" name="attr_bonusCarac2" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac2" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac2" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac2" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac2" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac2" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac2">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac2}}} {{valeurCarac=[[@{etoileCarac2}]]}} {{valeurCarac2=@{etoileCarac2}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac3" placeholder=".........." value="Agilité"></input>
+                <input type="number" name="attr_bonusCarac3" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac3" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac3" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac3" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac3" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac3" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac3">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac3}}} {{valeurCarac=[[@{etoileCarac3}]]}} {{valeurCarac2=@{etoileCarac3}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac4" placeholder=".........." value="Perception"></input>
+                <input type="number" name="attr_bonusCarac4" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac4" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac4" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac4" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac4" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac4" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac4">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac4}}} {{valeurCarac=[[@{etoileCarac4}]]}} {{valeurCarac2=@{etoileCarac4}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac5" placeholder=".........." value="Éducation"></input>
+                <input type="number" name="attr_bonusCarac5" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac5" value="1" checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac5" value="2"></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac5" value="3"></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac5" value="4"></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac5" value="5"></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac5">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac5}}} {{valeurCarac=[[@{etoileCarac5}]]}} {{valeurCarac2=@{etoileCarac5}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac6" placeholder=".........." value="Apparence"></input>
+                <input type="number" name="attr_bonusCarac6" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac6" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac6" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac6" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac6" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac6" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac6">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac6}}} {{valeurCarac=[[@{etoileCarac6}]]}} {{valeurCarac2=@{etoileCarac6}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+            </li>
+            <li class="sheet-etoileCarac">
+                <!-- *************************************************************** -->
+                <input type="text" name="attr_nomCarac7" placeholder=".........." value="Chance"></input>
+                <input type="number" name="attr_bonusCarac7" value="0" style="display: none"></input>
+                <input type="radio" name="attr_etoileCarac7" value="1"  checked></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac7" value="2" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac7" value="3" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac7" value="4" ></input><span class="sheet-barreCarac"></span>
+                <input type="radio" name="attr_etoileCarac7" value="5" ></input><span class="sheet-barreCarac"></span>
+                <select name="attr_valeurCarac7">
+                    <option value="1">Faible</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Bon</option>
+                    <option value="4">Excellent</option>
+                    <option value="5">Surhumain</option>
+                </select>
+                <button type="roll" value="&{template:rollCarac} {{dice=[[2d6]]}} {{nomCarac=@{nomCarac7}}} {{valeurCarac=[[@{etoileCarac7}]]}} {{valeurCarac2=@{etoileCarac7}}}  {{nomJoueur=@{character_name}}}" class="sheet-d6_2"></button><span></span>
+                <!-- *************************************************************** -->
+            </li>
+            <li>
+                <input type="text" name="attr_nomCarac8" placeholder=".........." value="Point de vie"></input>
+                <input type="number" name="attr_pvJoueur" value="0"></input>
+                <input type="number" name="attr_pvJoueurMax" value="0"></input>
+            </li>
+            <li class="sheet-protection">
+                <input type="text" name="attr_nomCarac9" placeholder=".........." value="Protection"></input>
+                <input type="number" name="attr_armureJoueur" value="0"></input>
+            </li>
+        </ul>
+        
+        <br>
+        <p class="sheet-titre2">Notes</p>
+        <textarea name="attr_noteJoueur" placeholder="................................"></textarea>
+    </div>
+</div><br>
+
+
+<div class="sheet-avantage">
+    <p class="sheet-titre">▬ Avantages</p>
+    
+    <div class="descriptionAvantage">
+        <fieldset class="repeating_avantage">
+            <!-- Nom ----------------------------------------------------------------------->
+            <input type="text" name="attr_nomAvantage" placeholder="Nom de l'avantage"></input><br>
+            <!-- Description ----------------------------------------------------------------------->
+            <textarea name="attr_descriptionAvantage" placeholder="Description de l'avantage"></textarea>
+        </fieldset>
+    </div>
+</div><br>
+
+<div class="sheet-equipement">
+    <p class="sheet-titre">▬ Équipements</p>
+    
+    <div class="descriptionArmes">
+        <p class="sheet-titre2">Armes</p>
+        <fieldset class="repeating_armes">
+            <!-- Nom ----------------------------------------------------------------------->
+            <input type="text" name="attr_nomArme" placeholder="Nom de l'arme"></input><input type="text" name="attr_degatArme" placeholder="1d4 de base"></input><button type="roll" value="/r @{degatArme}" class="sheet-d6"></button><span></span><br>
+            <!-- Description ----------------------------------------------------------------------->
+            <textarea name="attr_descriptionArme" placeholder="Description de l'arme"></textarea>
+        </fieldset>
+    
+        <br>
+        <p class="sheet-titre2">Objets</p>
+        <textarea name="attr_descriptionObjet" placeholder="Liste vos objets"></textarea>
+    </div>
+</div>
+
+<rolltemplate class="sheet-rolltemplate-rollCarac">
+<div class="rollCarac">
+    {{nomJoueur}} fait un test de {{nomCarac}} ({{valeurCarac2}})<br>
+    <p class="dice">{{dice}}</p>
+    {{#rollTotal() valeurCarac 1}}
+    <ul>
+        <li><p class="1">Facile (7) :</p><p class="2"> {{#rollBetween() dice -5 7}} Réussie {{/rollBetween() dice -5 7}} {{#rollBetween() dice 8 12}} Échoué {{/rollBetween() dice 8 12}}</p></li>
+        <li><p class="1">Moyen (5) :</p><p class="2"> {{#rollBetween() dice -5 5}} Réussie {{/rollBetween() dice -5 5}} {{#rollBetween() dice 6 12}} Échoué {{/rollBetween() dice 6 12}}</p></li>
+        <li><p class="1">Difficile (3) :</p><p class="2"> {{#rollBetween() dice -5 3}} Réussie {{/rollBetween() dice -5 3}} {{#rollBetween() dice 4 12}} Échoué {{/rollBetween() dice 4 12}}</p></li>
+        <li><p class="1">Très Difficile :</p><p class="2"> Echec auto.</p></li>
+        <li><p class="1">Impossible :</p><p class="2"> Echec auto.</p></li>
+    </ul>
+    {{/rollTotal() valeurCarac 1}}
+    
+    
+    {{#rollTotal() valeurCarac 2}}
+    <ul>
+        <li><p class="1">Facile (9) :</p><p class="2"> {{#rollBetween() dice -5 9}} Réussie {{/rollBetween() dice -5 9}} {{#rollBetween() dice 10 12}} Échoué {{/rollBetween() dice 10 12}}</p></li>
+        <li><p class="1">Moyen (7) :</p><p class="2"> {{#rollBetween() dice -5 7}} Réussie {{/rollBetween() dice -5 7}} {{#rollBetween() dice 8 12}} Échoué {{/rollBetween() dice 8 12}}</p></li>
+        <li><p class="1">Difficile (5) :</p><p class="2"> {{#rollBetween() dice -5 5}} Réussie {{/rollBetween() dice -5 5}} {{#rollBetween() dice 6 12}} Échoué {{/rollBetween() dice 6 12}}</p></li>
+        <li><p class="1">Très Difficile (3):</p><p class="2"> {{#rollBetween() dice -5 3}} Réussie {{/rollBetween() dice -5 3}} {{#rollBetween() dice 4 12}} Échoué {{/rollBetween() dice 4 12}}</p></li>
+        <li><p class="1">Impossible :</p><p class="2"> Echec auto.</p></li>
+    </ul>
+    {{/rollTotal() valeurCarac 2}}
+
+    {{#rollTotal() valeurCarac 3}}
+    <ul>
+        <li><p class="1">Facile (11) :</p><p class="2"> {{#rollBetween() dice -5 11}} Réussie {{/rollBetween() dice -5 11}} {{#rollBetween() dice 12 12}} Échoué {{/rollBetween() dice 12 12}}</p></li>
+        <li><p class="1">Moyen (9) :</p><p class="2"> {{#rollBetween() dice -5 9}} Réussie {{/rollBetween() dice -5 9}} {{#rollBetween() dice 10 12}} Échoué {{/rollBetween() dice 10 12}}</p></li>
+        <li><p class="1">Difficile (7) :</p><p class="2"> {{#rollBetween() dice -5 7}} Réussie {{/rollBetween() dice -5 7}} {{#rollBetween() dice 8 12}} Échoué {{/rollBetween() dice 8 12}}</p></li>
+        <li><p class="1">Très Difficile (5):</p><p class="2"> {{#rollBetween() dice -5 5}} Réussie {{/rollBetween() dice -5 5}} {{#rollBetween() dice 6 12}} Échoué {{/rollBetween() dice 6 12}}</p></li>
+        <li><p class="1">Impossible (3) :</p><p class="2"> {{#rollBetween() dice -5 3}} Réussie {{/rollBetween() dice -5 3}} {{#rollBetween() dice 4 12}} Échoué {{/rollBetween() dice 4 12}}</p></li>
+    </ul>
+    {{/rollTotal() valeurCarac 3}}
+
+    {{#rollTotal() valeurCarac 4}}
+    <ul>
+        <li><p class="1">Facile :</p><p class="2"> Réussite auto.</p></li>
+        <li><p class="1">Moyen (11) :</p><p class="2"> {{#rollBetween() dice -5 11}} Réussie {{/rollBetween() dice -5 11}} {{#rollBetween() dice 12 12}} Échoué {{/rollBetween() dice 12 12}}</p></li>
+        <li><p class="1">Difficile (9) :</p><p class="2"> {{#rollBetween() dice -5 9}} Réussie {{/rollBetween() dice -5 9}} {{#rollBetween() dice 10 12}} Échoué {{/rollBetween() dice 10 12}}</p></li>
+        <li><p class="1">Très Difficile (7):</p><p class="2"> {{#rollBetween() dice -5 7}} Réussie {{/rollBetween() dice -5 7}} {{#rollBetween() dice 8 12}} Échoué {{/rollBetween() dice 8 12}}</p></li>
+        <li><p class="1">Impossible (5) :</p><p class="2"> {{#rollBetween() dice -5 5}} Réussie {{/rollBetween() dice -5 5}} {{#rollBetween() dice 6 12}} Échoué {{/rollBetween() dice 6 12}}</p></li>
+    </ul>
+    {{/rollTotal() valeurCarac 4}}
+    
+    {{#rollTotal() valeurCarac 5}}
+    <ul>
+        <li><p class="1">Facile :</p><p class="2"> Réussite auto.</p></li>
+        <li><p class="1">Moyen :</p><p class="2">  Réussite auto.</p></li>
+        <li><p class="1">Difficile (11) :</p><p class="2"> {{#rollBetween() dice -5 11}} Réussie {{/rollBetween() dice -5 11}} {{#rollBetween() dice 12 12}} Échoué {{/rollBetween() dice 12 12}}</p></li>
+        <li><p class="1">Très Difficile (9):</p><p class="2"> {{#rollBetween() dice -5 9}} Réussie {{/rollBetween() dice -5 9}} {{#rollBetween() dice 10 12}} Échoué {{/rollBetween() dice 10 12}}</p></li>
+        <li><p class="1">Impossible (7) :</p><p class="2"> {{#rollBetween() dice -5 7}} Réussie {{/rollBetween() dice -5 7}} {{#rollBetween() dice 8 12}} Échoué {{/rollBetween() dice 8 12}}</p></li>
+    </ul>
+    {{/rollTotal() valeurCarac 5}}
+</div>
+</rolltemplate>
+
+<script type="text/worker">
+    on("change:valeurCarac1", function() {
+        getAttrs(["etoileCarac1","valeurCarac1"], function(values) {
+            if (values.etoileCarac1 !== values.valeurCarac1) {
+                setAttrs({ etoileCarac1: values.valeurCarac1 });
+            };
+            if (values.etoileCarac1 <= 3) {
+                setAttrs({ bonusCarac1: 0 });
+            };
+            if (values.etoileCarac1 == 4) {
+                setAttrs({ bonusCarac1: 1 });
+            };
+            if (values.etoileCarac1 == 5) {
+                setAttrs({ bonusCarac1: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac1", function() {
+        getAttrs(["etoileCarac1","valeurCarac1"], function(values) {
+            if (values.valeurCarac1 !== values.etoileCarac1) {
+                setAttrs({ valeurCarac1: values.etoileCarac1 });
+            };
+            if (values.etoileCarac1 <= 3) {
+                setAttrs({ bonusCarac1: 0 });
+            };
+            if (values.etoileCarac1 == 4) {
+                setAttrs({ bonusCarac1: 1 });
+            };
+            if (values.etoileCarac1 == 5) {
+                setAttrs({ bonusCarac1: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac2", function() {
+        getAttrs(["etoileCarac2","valeurCarac2"], function(values) {
+            if (values.etoileCarac2 !== values.valeurCarac2) {
+                setAttrs({ etoileCarac2: values.valeurCarac2 });
+            };
+            if (values.etoileCarac2 <= 3) {
+                setAttrs({ bonusCarac2: 0 });
+            };
+            if (values.etoileCarac2 == 4) {
+                setAttrs({ bonusCarac2: 1 });
+            };
+            if (values.etoileCarac2 == 5) {
+                setAttrs({ bonusCarac2: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac2", function() {
+        getAttrs(["etoileCarac2","valeurCarac2"], function(values) {
+            if (values.valeurCarac2 !== values.etoileCarac2) {
+                setAttrs({ valeurCarac2: values.etoileCarac2 });
+            };
+            if (values.etoileCarac2 <= 3) {
+                setAttrs({ bonusCarac2: 0 });
+            };
+            if (values.etoileCarac2 == 4) {
+                setAttrs({ bonusCarac2: 1 });
+            };
+            if (values.etoileCarac2 == 5) {
+                setAttrs({ bonusCarac2: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac3", function() {
+        getAttrs(["etoileCarac3","valeurCarac3"], function(values) {
+            if (values.etoileCarac3 !== values.valeurCarac3) {
+                setAttrs({ etoileCarac3: values.valeurCarac3 });
+            };
+            if (values.etoileCarac3 <= 3) {
+                setAttrs({ bonusCarac3: 0 });
+            };
+            if (values.etoileCarac3 == 4) {
+                setAttrs({ bonusCarac3: 1 });
+            };
+            if (values.etoileCarac3 == 5) {
+                setAttrs({ bonusCarac3: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac3", function() {
+        getAttrs(["etoileCarac3","valeurCarac3"], function(values) {
+            if (values.valeurCarac3 !== values.etoileCarac3) {
+                setAttrs({ valeurCarac3: values.etoileCarac3 });
+            };
+            if (values.etoileCarac3 <= 3) {
+                setAttrs({ bonusCarac3: 0 });
+            };
+            if (values.etoileCarac3 == 4) {
+                setAttrs({ bonusCarac3: 1 });
+            };
+            if (values.etoileCarac3 == 5) {
+                setAttrs({ bonusCarac3: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac4", function() {
+        getAttrs(["etoileCarac4","valeurCarac4"], function(values) {
+            if (values.etoileCarac4 !== values.valeurCarac4) {
+                setAttrs({ etoileCarac4: values.valeurCarac4 });
+            };
+            if (values.etoileCarac4 <= 3) {
+                setAttrs({ bonusCarac4: 0 });
+            };
+            if (values.etoileCarac4 == 4) {
+                setAttrs({ bonusCarac4: 1 });
+            };
+            if (values.etoileCarac4 == 5) {
+                setAttrs({ bonusCarac4: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac4", function() {
+        getAttrs(["etoileCarac4","valeurCarac4"], function(values) {
+            if (values.valeurCarac4 !== values.etoileCarac4) {
+                setAttrs({ valeurCarac4: values.etoileCarac4 });
+            };
+            if (values.etoileCarac4 <= 3) {
+                setAttrs({ bonusCarac4: 0 });
+            };
+            if (values.etoileCarac4 == 4) {
+                setAttrs({ bonusCarac4: 1 });
+            };
+            if (values.etoileCarac4 == 5) {
+                setAttrs({ bonusCarac4: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac5", function() {
+        getAttrs(["etoileCarac5","valeurCarac5"], function(values) {
+            if (values.etoileCarac5 !== values.valeurCarac5) {
+                setAttrs({ etoileCarac5: values.valeurCarac5 });
+            };
+            if (values.etoileCarac5 <= 3) {
+                setAttrs({ bonusCarac5: 0 });
+            };
+            if (values.etoileCarac5 == 4) {
+                setAttrs({ bonusCarac5: 1 });
+            };
+            if (values.etoileCarac5 == 5) {
+                setAttrs({ bonusCarac5: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac5", function() {
+        getAttrs(["etoileCarac5","valeurCarac5"], function(values) {
+            if (values.valeurCarac5 !== values.etoileCarac5) {
+                setAttrs({ valeurCarac5: values.etoileCarac5 });
+            };
+            if (values.etoileCarac5 <= 3) {
+                setAttrs({ bonusCarac5: 0 });
+            };
+            if (values.etoileCarac5 == 4) {
+                setAttrs({ bonusCarac5: 1 });
+            };
+            if (values.etoileCarac5 == 5) {
+                setAttrs({ bonusCarac5: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac6", function() {
+        getAttrs(["etoileCarac6","valeurCarac6"], function(values) {
+            if (values.etoileCarac6 !== values.valeurCarac6) {
+                setAttrs({ etoileCarac6: values.valeurCarac6 });
+            };
+            if (values.etoileCarac6 <= 3) {
+                setAttrs({ bonusCarac6: 0 });
+            };
+            if (values.etoileCarac6 == 4) {
+                setAttrs({ bonusCarac6: 1 });
+            };
+            if (values.etoileCarac6 == 5) {
+                setAttrs({ bonusCarac6: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac6", function() {
+        getAttrs(["etoileCarac6","valeurCarac6"], function(values) {
+            if (values.valeurCarac6 !== values.etoileCarac6) {
+                setAttrs({ valeurCarac6: values.etoileCarac6 });
+            };
+            if (values.etoileCarac6 <= 3) {
+                setAttrs({ bonusCarac6: 0 });
+            };
+            if (values.etoileCarac6 == 4) {
+                setAttrs({ bonusCarac6: 1 });
+            };
+            if (values.etoileCarac6 == 5) {
+                setAttrs({ bonusCarac6: 2 });
+            };
+        });
+    });
+</script>
+<!-- *********************************************************************** -->
+<script type="text/worker">
+    on("change:valeurCarac7", function() {
+        getAttrs(["etoileCarac7","valeurCarac7"], function(values) {
+            if (values.etoileCarac7 !== values.valeurCarac7) {
+                setAttrs({ etoileCarac7: values.valeurCarac7 });
+            };
+            if (values.etoileCarac7 <= 3) {
+                setAttrs({ bonusCarac7: 0 });
+            };
+            if (values.etoileCarac7 == 4) {
+                setAttrs({ bonusCarac7: 1 });
+            };
+            if (values.etoileCarac7 == 5) {
+                setAttrs({ bonusCarac7: 2 });
+            };
+        });
+    });
+</script>
+<script type="text/worker">
+    on("change:etoileCarac7", function() {
+        getAttrs(["etoileCarac7","valeurCarac7"], function(values) {
+            if (values.valeurCarac7 !== values.etoileCarac7) {
+                setAttrs({ valeurCarac7: values.etoileCarac7 });
+            };
+            if (values.etoileCarac7 <= 3) {
+                setAttrs({ bonusCarac7: 0 });
+            };
+            if (values.etoileCarac7 == 4) {
+                setAttrs({ bonusCarac7: 1 });
+            };
+            if (values.etoileCarac7 == 5) {
+                setAttrs({ bonusCarac7: 2 });
+            };
+        });
+    });
+</script>
